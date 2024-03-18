@@ -1,0 +1,13 @@
+body {
+	background-color: #414141;
+}
+
+#slideshow{
+    display: flex;
+    justify-content: center;
+}
+
+#slideshow img{
+    max-width: 110vh;
+    max-height: 110vh;
+}
