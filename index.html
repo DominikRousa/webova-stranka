@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Website</title>
 	<link rel="stylesheet" type="text/css" href="ui.css">
+	<link href="https://fonts.cdnfonts.com/css/object-sans" rel="stylesheet">
 </head>
+
 <body>
-    
-	<button id="darkmode">Dark Mode</button>
-	<button id="login">Login</button>
+
+	<div>
+		<div>
+			<nav>
+				<ul class="navbar">
+					<li><a href="">Logo</a></li>
+					<li class="navButton"> <button id="myBtn" class="logInButton" style="font-weight: 700; border: 1px solid #000; border-radius: 7px; border: 0px;">Log In</button>
+
+						<div id="myModal" class="modal">
+
+							<div class="modal-content">
+								<div class="loginPage">
+									<div class="loginContainer">
+										<span class="close" style="margin-left: 30vh; position: absolute; z-index:100;">&times;</span>
+										<h3><strong>Přihlásit se</strong></h3>
+
+										<p>Have your orders on one place</p>
+
+
+										<input type="text" id="username" placeholder="Username">
+										<input type="password" id="password" placeholder="Password">
+										<button onclick="login()"><strong>Přihlásit se</strong></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 	<div id="slideshow">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704674-2_rr-racing-my24-300-2str.jpg?65856e2b" alt="Beta 250">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/1521813-3_rr-4str-my24.jpg?64941823" alt="Beta 350">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704683-1_rr-racing-my24-4str.jpg?658575c6" alt="Beta 430">
+		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704674-2_rr-racing-my24-300-2str.jpg?65856e2b"
+			alt="Beta 250">
+		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/1521813-3_rr-4str-my24.jpg?64941823"
+			alt="Beta 350">
+		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704683-1_rr-racing-my24-4str.jpg?658575c6"
+			alt="Beta 430">
 	</div>
 	<script src="script.js"></script>
+
 </body>
+
 </html>
