@@ -55,10 +55,15 @@
 }
 
 body {
-    background-color: #414141;
+    background-color: #c0c0c0;
     font-family: 'Object Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
+}
+
+.dark-mode {
+    background-color: #414141;
+    color: black;
 }
 
 ul,
@@ -72,13 +77,16 @@ a {
 #slideshow {
     display: flex;
     justify-content: center;
+    padding-inline: 4vh;
+    margin-top: 7.5vh;
 }
 
 #slideshow img {
     max-width: 110vh;
     max-height: 110vh;
+    min-width: 10vh;
     border-radius: 90px;
-    outline: #fff 3px solid;
+    outline: #000000 3px solid;
     outline-offset: 5px;
 }
 
@@ -109,6 +117,8 @@ a {
     background-color: #f0f0f0
 }
 
+
+
 .modal {
     display: none;
     position: fixed;
@@ -125,11 +135,10 @@ a {
 
 .modal-content {
     animation: myAnim 2s ease 0s 1 normal forwards;
-    background-color: #fefefe;
+    background-color: transparent;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
+    width: 70%;
     border-radius: 2.5vh;
 }
 

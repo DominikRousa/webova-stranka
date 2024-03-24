@@ -13,15 +13,17 @@
 		<div>
 			<nav>
 				<ul class="navbar">
-					<li><a href="">Logo</a></li>
-					<li class="navButton"> <button id="myBtn" class="logInButton" style="font-weight: 700; border: 1px solid #000; border-radius: 7px; border: 0px;">Log In</button>
-
+					<li><a href=""><img class="logo" src="https://e7.pngegg.com/pngimages/1023/640/png-clipart-car-beta-motorcycle-trials-bicycle-heavy-equipment-text-trademark.png" height="64" alt=""></a></li>
+					<div style="display: flex; align-items: center; gap: 3vh;">
+						<li class="navButton"> <button onclick="darkmode()" id="darkmode" class="logInButton" style="font-weight: 700; border: 1px solid #000; border-radius: 28px; font-size: 18px;">Dark mode</button>
+						<li class="navButton"> <button id="myBtn" class="logInButton" style="font-weight: 700;border: 1px solid #000; border-radius: 28px; font-size: 18px;">Log In</button>
+					</div>
 						<div id="myModal" class="modal">
 
 							<div class="modal-content">
 								<div class="loginPage">
 									<div class="loginContainer">
-										<span class="close" style="margin-left: 30vh; position: absolute; z-index:100;">&times;</span>
+										<span class="close" style="text-align: end; z-index:100;">&times;</span>
 										<h3><strong>Přihlásit se</strong></h3>
 
 										<p>Have your orders on one place</p>
@@ -30,6 +32,21 @@
 										<input type="text" id="username" placeholder="Username">
 										<input type="password" id="password" placeholder="Password">
 										<button onclick="login()"><strong>Přihlásit se</strong></button>
+										<p>Dont have account?  <a style="color: blue; text-decoration: underline;" onclick="showRegister()" href="">Create One</a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-content">
+								<div class="loginPage">
+									<div class="loginContainer">
+										<h3><strong>Registrovat se</strong></h3>
+
+
+										<input type="text" id="username" placeholder="Username" required="">
+										<input type="password" id="password" placeholder="Password" required="">
+										<input type="password" id="password" placeholder="Repeat Password" required="">
+										<button onclick="login()"><strong>Registrovat se</strong></button>
 									</div>
 								</div>
 							</div>
@@ -40,11 +57,11 @@
 		</div>
 	</div>
 	<div id="slideshow">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704674-2_rr-racing-my24-300-2str.jpg?65856e2b"
+		<img id="slideshowimg" src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704674-2_rr-racing-my24-300-2str.jpg?65856e2b"
 			alt="Beta 250">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/1521813-3_rr-4str-my24.jpg?64941823"
+		<img id="slideshowimgg" src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/1521813-3_rr-4str-my24.jpg?64941823"
 			alt="Beta 350">
-		<img src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704683-1_rr-racing-my24-4str.jpg?658575c6"
+		<img id="slideshowimggg" src="https://cdn.myshoptet.com/usr/www.rockway.cz/user/shop/big/4704683-1_rr-racing-my24-4str.jpg?658575c6"
 			alt="Beta 430">
 	</div>
 	<script src="script.js"></script>
